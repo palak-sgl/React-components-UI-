@@ -6,7 +6,7 @@ function Select(props) {
   return (
     <div className="relative">
       <select
-        className="border mt-2 rounded w-60 p-3 py-1 focus:outline ring-1 focus-within:outline-indigo-500 appearance-none"
+        className="border mt-2 rounded w-72 p-3 py-1 focus:outline ring-1 focus-within:outline-indigo-500 appearance-none cursor-pointer"
         defaultValue="Choose One"
       >
         <option value="" disabled>
@@ -19,7 +19,7 @@ function Select(props) {
           </option>
         ))}
       </select>
-      <div className="absolute bottom-2.5 right-14 text-xs flex pointer-events-none">
+      <div className="absolute bottom-2.5 right-4 text-xs flex pointer-events-none">
         <i className="fa-solid fa-chevron-down cursor-pointer"></i>
       </div>
     </div>

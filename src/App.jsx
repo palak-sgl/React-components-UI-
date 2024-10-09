@@ -78,9 +78,17 @@ function App() {
             <h3 className="mt-5">Name</h3>
           </div>
 
-          <Input type="text" placeholder="Write your name"></Input>
+          <Input
+            type="text"
+            placeholder="Write your name"
+            className="w-72"
+          ></Input>
           <h3 className="mt-5">Email</h3>
-          <Input type="text" placeholder="Write your email"></Input>
+          <Input
+            type="text"
+            placeholder="Write your email"
+            className="w-72"
+          ></Input>
           <h3 className="mt-5">Write description</h3>
           <Textarea placeholder="Add some description"></Textarea>
           <h3 className="mt-2">Date of birth</h3>
@@ -92,17 +100,17 @@ function App() {
           />
         </div>
         <div className="w-80 h-90 shadow-lg px-4 py-5">
-          <div className="flex">
-            <div>
-              <Label someLabel="Personal Information"></Label>
+          <div className="float">
+            <div className="float-left">
+              <Label someLabel="Preferences"></Label>
             </div>
-            <div>
+            <div className="float-right">
               <Tooltip text="You have got 5 Notifications." color={"white"}>
                 <Badge label="5" color={"red"}></Badge>
               </Tooltip>
             </div>
           </div>
-          <h3 className="mt-5">Language</h3>
+          <h3 className="mt-10">Language</h3>
           <Select
             placeholder="Choose One"
             defaultValue="Choose"
@@ -120,7 +128,7 @@ function App() {
             />
           </div>
 
-          <h3 className="mt-5">Preferred Method for Notifications</h3>
+          <h3 className="mt-5 mb-2">Preferred Method for Notifications</h3>
           <Radio name="gender" label="SMS" id="male" value="male" />
           <Radio name="gender" label="Email" id="female" value="female" />
           <h3 className="mt-10 text-md text-red-600 font-semibold">
@@ -135,22 +143,30 @@ function App() {
           />
         </div>
         <div className="w-80 h-90 shadow-lg px-4 py-5">
-          <div className="flex">
-            <div>
-              <Label someLabel="Personal Information"></Label>
+          <div className="float">
+            <div className="float-left">
+              <Label someLabel="Security Settings"></Label>
             </div>
-            <div>
+            <div className="float-right">
               <Tooltip text="You have got 5 Notifications." color={"white"}>
                 <Badge label="5" color={"red"}></Badge>
               </Tooltip>
             </div>
           </div>
-          <h3 className="mt-5">Current Password</h3>
-          <Input type="password" placeholder="Write current password"></Input>
+          <h3 className="mt-10">Current Password</h3>
+          <Input
+            type="password"
+            placeholder="Write current password"
+            className="w-72"
+          ></Input>
           <h3>New Password</h3>
           <div className="flex">
-            <Input type="password" placeholder="Write new password"></Input>
-            <Popover content="Your password must be 8 characters long having uppercase, lowercaseand a special character." />
+            <Input
+              type="password"
+              placeholder="Write new password"
+              className="w-64"
+            />
+            <Popover content="Your password must be 8 characters long having uppercase, lowercase and a special character." />
           </div>
           <Checkbox label="I agree to the terms" />
           <Accordion

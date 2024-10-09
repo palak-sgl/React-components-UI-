@@ -11,7 +11,7 @@ function Popover({ content }) {
     <div className="relative inline-block">
       <button
         onClick={togglePopover}
-        className=" ml-4 text-sm mt-4 bg-gray-100 rounded-full focus:outline-none"
+        className=" ml-5 text-sm mt-4 bg-gray-100 rounded-full focus:outline-none"
       >
         <i class="fa-solid fa-circle-info"></i>
       </button>
